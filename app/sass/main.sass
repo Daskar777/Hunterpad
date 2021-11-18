@@ -1,21 +1,472 @@
+@import "_keyframes.sass" , "_fonts.sass"
 body
-  background-color: #000000
-.container
-  text-align: center
+  font-family: 'Poppins', sans-serif
+  font-style: normal
+  font-size: 14px
+  margin: 0
+  padding: 0
+  background-color: black
+  a
+    text-decoration: none
+    &:hover
+      cursor: pointer
+  input
+    &:hover
+      cursor: pointer
+  
+.flex
+  display: flex
+  align-items: center
+.global_wrap
+  width: 1440px
+  margin: 0 auto
+  background-color: #E5E5E5
+//------- Buttons ------------//
+.button_blue
+  background-color: #2F75FD
+  border-radius: 24px
+  border: 0
+  color: white
+  padding: 12px 18px
+  font-weight: 700
+  line-height: 16px
+  cursor: pointer
+.white_button
+  background-color: #FFFFFF
+  border-radius: 16px
+  border: 0
+  color: #005CEE
+  padding: 12px 18px
+  font-weight: 700
+  line-height: 16px
+  cursor: pointer
+.button_grey
+  background: #E6E8EC
+  border-radius: 12px
+  border: 0
+  color: #777E90
+//Header part
+header
+  padding: 20px 120px 19px 120px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-bottom: 1px solid #E6E8EC
+  background-color: #FFFFFF
+.logo_bar
+  display: flex
+  align-items: center
+  span
+    margin-left: 24px
+    font-weight: 800
+    font-size: 20px
+    
+// Logo part
+.logo_part1
+  position: relative
+  .logo_part2
+    position: absolute
+    left: 25px
+    top: 16px
+    
+//Nav part
+.nav_bar
+  display: flex
+  nav
+    li
+      list-style: none
+      display: inline-block
+      margin-left: 40px
+      font-weight: 700
+    a
+      text-decoration: none
+      color: #777E90
+      &:hover
+        color: #000000
+    ul
+      margin: 0
+      padding: 0
+      
+  //Form part
+.form_part
+  align-items: center
+  display: flex
+  form
+    margin-right: 31px
+.lang_links
+  font-weight: bold
+  a
+    color: #777E90
+    &:hover
+      color: #000000
+#ru_link
+  margin-left: 8px
+#eng_link
+  margin-right: 8px
+  
+  
+//Big screen part
+.big_screen_wrap
   display: flex
   flex-direction: column
   align-items: center
-  justify-content: center
-  background-color: #000000
-  margin-top: 10%
+  padding: 30px
+  background: url("image/Screenshot_18 1.jpg") no-repeat
+  background-size: contain
+  height: 601px
+  input
+    border-radius: 16px
+.banner_plaсe
+  width: 790px
+  height: 80px
+  border-radius: 8px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: url("image/Rectangle.png") no-repeat
+  background-size: contain
+  padding:  13px 136px 12px 68px
+  margin-bottom: 93px
+  position: relative
+  section
+    color: #ffffff
+    width: 75%
+    p
+      font-style: italic
+      font-weight: 500
+      line-height: 22px
+      margin-top: 0
+    h2
+      font-weight: bold
+      font-size: 20px
+      line-height: 28px
+      margin-bottom: 8px
+.big_title
+  margin-bottom: 60px
   h1
-    color: white
-    font-size: 48px
-  p
-    color: yellow
-    font-size: 20px
-    text-transform: uppercase
-    &:before,&:after
-      content: ' - - - - '
-      color: yellowgreen
-      font-size: 1.2em
+    color: #FFFFFF
+    font-weight: bold
+    font-size: 64px
+    line-height: 72px
+    margin: 0
+#close_but
+  height: 20px
+  width: 20px
+  background: url("image/x-circle.svg") no-repeat
+  background-size: cover
+  position: absolute
+  top: 18px
+  right: 18px
+  &:hover
+    cursor: pointer
+    
+    
+// -------Sales --------
+
+.sales_wrap
+  overflow: hidden
+  padding-top: 39px
+  padding-left: 120px
+.token_title
+  font-size: 40px
+  font-weight: 700
+  line-height: 48px
+  margin-bottom: 70px
+  text-align: center
+  display: flex
+  margin-left: -120px
+  justify-content: center
+.tokens_wrap
+  display: flex
+  margin-bottom: 102px
+.token
+  width: 274px
+  height: 393px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  margin-right: 35px
+  background-color: #FFFFFF
+  border-radius: 24px
+  div
+    &:nth-child(2)
+      font-size: 20px
+      font-weight: 700
+    &:nth-child(3)
+      font-size: 16px
+      font-weight: 500
+    &:nth-child(4)
+      font-size: 16px
+      font-weight: 500
+    span
+      font-weight: 700
+  button
+    font-weight: 500
+    font-size: 16px
+    margin-bottom: 24px
+    padding: 14px 71px 13px 71px
+    border-radius: 12px
+
+.complete_token
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: -120px
+  
+// ----------------------------       Skills       --------------------------------- //
+.skills_wrap
+  padding-top: 150px
+.stokens_wrap
+  padding-top: 64px
+  margin-bottom: 205px
+.skill_token
+  padding: 45px 68px 60px 68px
+  border-radius: 16px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-around
+  width: 241px
+  height: 272px
+  background-color: #FFFFFF
+.skills_line
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 35px
+  flex-wrap: wrap
+.skill_logo
+  margin-bottom: 33px
+  background-color: #2F75FD
+  width: 60px
+  height: 60px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.skill_title
+  font-size: 24px
+  font-style: normal
+  font-weight: 700
+  line-height: 32px
+  letter-spacing: 0
+  text-align: center
+  margin-bottom: 24px
+
+
+.skill_quote
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 24px
+  letter-spacing: 0
+  text-align: center
+  color: #777E90
+
+
+
+//-------Features ------------//
+
+.features_wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 157px auto
+  gap: 57px
+  width: 1200px
+
+.features_token
+  padding: 16px 40px 16px 40px
+  height: 284px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  border-radius: 24px
+  background-color: #FFFFFF
+
+.features_icon
+  img
+    width: 100px
+    height: 100px
+.features_title
+  font-size: 24px
+  font-weight: 700
+  text-align: center
+
+.features_quote
+  font-weight: 400
+  font-size: 16px
+  font-style: normal
+  line-height: 24px
+  letter-spacing: 0em
+  text-align: center
+
+//--------------Road map -------------//
+.map_wrap
+  margin-bottom: 139px
+
+
+.h2_title
+  text-align: center
+  margin-bottom: 119px
+  font-weight: 700
+  font-size: 32px
+
+.q_title
+  font-weight: bold
+  font-size: 20px
+  line-height: 24px
+  margin-bottom: 8px
+.light_quote
+  padding: 16px
+  background-color: #FFFFFF
+  border-radius: 24px
+  width: fit-content
+  position: relative
+  z-index: 2
+  display: inline-block
+  &:after
+    content: ''
+    position: absolute
+    border-radius: 50%
+    border: 10px solid black
+    z-index: 1
+    width: 0px
+    height: 0px
+  &:before
+    content: ''
+    position: absolute
+    border-left: 2px dashed black
+    width: 2px
+    z-index: 0
+  &:nth-child(1)
+    top: -30px
+    left: 0px
+    margin-left: 104px
+    &:after
+      left: 16px
+      bottom: -50px
+    &:before
+      height: 50px
+      bottom: -50px
+      left: 25px
+  &:nth-child(2)
+    margin-left: 152px
+    top: -46px
+    left: 0px
+    &:after
+      left: 76px
+      bottom: -66px
+    &:before
+      bottom: -50px
+      left: 85px
+      height: 50px
+  &:nth-child(3)
+    margin-left: 168px
+    top: -22px
+    left: 0px
+    &:after
+      left: 65.5px
+      bottom: -42px
+    &:before
+      height: 40px
+      bottom: -40px
+      left: 75px
+.down_line
+  padding-top: 49px
+  display: flex
+  .light_quote
+    top: 0
+    &:nth-child(1)
+      &:after
+        left: 16px
+        top: -72px
+      &:before
+        left: 25px
+        height: 60px
+        top: -60px
+    &:nth-child(2)
+      margin-left: 84px
+      &:after
+        left: 58px
+        top: -72px
+      &:before
+        top: -50px
+        left: 67px
+        height: 50px
+    &:nth-child(3)
+      margin-left: 164px
+      &:after
+        left: 46px
+        top: -72px
+      &:before
+        top: -50px
+        left: 55px
+        height: 50px
+      
+  span
+    color: #777E90
+    font-style: italic
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+
+    
+    
+    
+    
+    
+//---------------- Partners ------------//
+.partners_wrap
+  h2_title
+    margin-bottom: 59px
+    
+.partners
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 30px
+.par_token
+  width: 274px
+  height: 300px
+  border-radius: 24px
+  display: flex
+  justify-content: center
+  align-items: center
+  &:hover
+    background: #FFFFFF
+    svg
+      path
+        fill: #777E90
+    
+
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+//--------------- бургер меню --------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "_adaptive.sass"
+

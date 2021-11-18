@@ -12,5 +12,25 @@
     "gulp-sass": "^5.0.0",
     "sass": "^1.43.4",
     "underscore": "^1.13.1"
-  }
+  },
+  "name": "hunterpad",
+  "description": "Some basic template for web dev(junior)\r sass to min.css\r babel for JS(compile new js code to old ES specifications)\r normilize.css\r reload on save\r git clone https://github.com/Daskar777/basic_tamplate",
+  "version": "1.2.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daskar777/Hunterpad.git"
+  },
+  "keywords": [
+    "Daskar"
+  ],
+  "author": "Daskar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daskar777/Hunterpad/issues"
+  },
+  "homepage": "https://github.com/Daskar777/Hunterpad#readme"
 }

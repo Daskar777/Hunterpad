@@ -1,10 +1,10 @@
 "use strict";
 
-var a = 900;
-var forgive = 'some give';
+var banner1 = document.getElementById('banner_place'),
+    closeBut = document.getElementById('close_but');
 
-var arrowFunc = function arrowFunc(argument) {
-  console.log("Hey ".concat(argument, " , how do ").concat(argument, " dared to open console?"));
+closeBut.onclick = function () {
+  banner1.style.visibility = 'hidden';
 };
 
-arrowFunc('you');
+var sdf = function sdf(dffff) {};

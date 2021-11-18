@@ -1,6 +1,7 @@
-let a = 900;
-const forgive = 'some give';
-let arrowFunc = argument => {
-    console.log(`Hey ${argument} , how do ${argument} dared to open console?`)
+let banner1 = document.getElementById('banner_place'),
+    closeBut = document.getElementById('close_but');
+closeBut.onclick = function() {
+    banner1.style.visibility = 'hidden';
 }
-arrowFunc('you');
+
+let sdf = dffff => {};
