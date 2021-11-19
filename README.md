@@ -6,3 +6,4 @@ normilize.css
 reload on save
 git clone https://github.com/Daskar777/basic_tamplate 
 
+https://www.figma.com/file/lu4ItN5FBJyFib8RHsM0T5/Launchpad?node-id=0%3A1
